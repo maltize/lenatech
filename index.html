@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>Maciej Gajek LENATECH</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+  <script type="text/javascript" charset="utf-8" src="javascripts/jquery-1.5.1.min.js"></script>
+
+ </head>
+ <body>
+   <!-- <div id="infoDiv">
+   </div> -->
+
+   <div id="mainDiv">
+     <h1>Maciej Gajek LENATECH</h1>
+     <h2>
+       phone:  +48 608 458 249 <br>
+       e-mail: maltize@gmail.com
+     </h2>
+   </div>
+
+   <div id="coolDiv">
+     <h3>i do code</h3>
+   </div>
+
+   <div id="markers">
+    <!-- <div class="marker">
+    </div> -->
+   </div>
+
+   <div class="bx-overlay">
+   </div>
+
+   <script type="text/javascript">
+
+    $(document).ready(function() 
+    {
+
+     var myWidth = window.innerWidth;
+     var leftVal = $("#markers").children().css('left');
+     var leftValNumber = parseFloat(leftVal);
+     var leftRatio = leftValNumber / myWidth;
+     var leftValPos;
+
+     var myHeight = window.innerHeight;
+     var topVal = $("#markers").children().css('top');
+     var topValNumber = parseFloat(topVal);
+     var topRatio = topValNumber / myHeight;
+     var topValPos;
+
+     var scaleRatio;
+
+     if (myWidth > myHeight){
+       scaleRatio = 20/myWidth;
+     } else {
+       scaleRatio = 20/myHeight;
+     }
+
+     window.onresize = function() {
+       sizeMarkers();
+     }
+
+     function init()
+     {
+
+       sizeMarkers();
+     }
+     
+     function sizeMarkers()
+     {
+
+        if( typeof( window.innerWidth ) == 'number' ) {
+          //Non-IE
+
+          myWidth = window.innerWidth;
+          myHeight = window.innerHeight;
+        } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+          //IE 6+ in 'standards compliant mode'
+          myWidth = document.documentElement.clientWidth;
+          myHeight = document.documentElement.clientHeight;
+        } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+          //IE 4 compatible
+          myWidth = document.body.clientWidth;
+          myHeight = document.body.clientHeight;
+        }
+       topVal = $("#markers").children().css('top');
+       topValNumber = parseFloat(topVal);
+       topValPos = topRatio * myHeight;
+
+       leftVal = $("#markers").children().css('top');
+       leftValNumber = parseFloat(leftVal);
+       leftValPos = leftRatio * myWidth;
+
+       if (myWidth < myHeight){
+        $("#markers").children().width(myWidth*scaleRatio);
+        $("#markers").children().height(myWidth*scaleRatio);
+       } else {
+        $("#markers").children().width(myHeight*scaleRatio);
+        $("#markers").children().height(myHeight*scaleRatio);
+       }
+
+       $("#markers").children().css('top',topValPos);
+       $("#markers").children().css('left',leftValPos);
+
+       // $("#infoDiv").html( 'Width = ' + myWidth + ' | Height = ' + myHeight + ' | Top Value: ' + topValPos + ' | Left Value: ' + leftValPos);
+     }
+
+       init();
+     });
+
+   </script>
+ </body>
+</html>

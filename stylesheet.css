@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'transformers';
+    src: url('fonts/transformers_movie-webfont.eot');
+    src: url('fonts/transformers_movie-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/transformers_movie-webfont.woff') format('woff'),
+         url('fonts/transformers_movie-webfont.ttf') format('truetype'),
+         url('fonts/transformers_movie-webfont.svg#transformers') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: '8bit';
+    src: url('fonts/8-bit_wonder-webfont.eot');
+    src: url('fonts/8-bit_wonder-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/8-bit_wonder-webfont.woff') format('woff'),
+         url('fonts/8-bit_wonder-webfont.ttf') format('truetype'),
+         url('fonts/8-bit_wonder-webfont.svg#8bit') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('fonts/bebasneue-webfont.eot');
+    src: url('fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebasneue-webfont.woff') format('woff'),
+         url('fonts/bebasneue-webfont.ttf') format('truetype'),
+         url('fonts/bebasneue-webfont.svg#bebas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    background: url(images/lenatech.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#infoDiv {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    position:absolute;
+}
+
+.bx-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: transparent url(images/pattern.png) repeat top left;
+    z-index:10;
+}
+
+#mainDiv {
+    position: absolute;
+    top: 37%;
+    left: 50px;
+    color: #fff;
+    z-index: 1001;
+}
+
+#mainDiv h1 {
+  font-family: 'transformers', Arial, sans-serif;
+  font-size: 35pt;
+}
+
+#mainDiv h2 {
+  font-family: 'bebas', Arial, sans-serif;
+  font-size: 25pt;
+}
+
+#coolDiv {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    color: #fff;
+    z-index: 1001;
+}
+
+#coolDiv h3 {
+  font-family: 'bebas', Arial, sans-serif;
+  font-size: 100pt;
+  margin-top: 25pt;
+}
