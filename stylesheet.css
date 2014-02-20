@@ -61,7 +61,7 @@ html {
 
 #mainDiv {
     position: absolute;
-    top: 180px;
+    top: 25px;
     left: 50px;
     color: #fff;
     z-index: 1001;
@@ -77,16 +77,8 @@ html {
   font-size: 25pt;
 }
 
-#coolDiv {
-    position: absolute;
-    top: 0px;
-    left: 50px;
-    color: #fff;
-    z-index: 1001;
-}
-
-#coolDiv h3 {
+#mainDiv h3 {
   font-family: 'bebas', Arial, sans-serif;
-  font-size: 100pt;
-  margin-top: 25pt;
+  font-size: 75pt;
+  margin: 0 0;
 }
