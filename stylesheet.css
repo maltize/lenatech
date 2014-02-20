@@ -35,7 +35,7 @@
 }
 
 html {
-    background: url(images/lenatech.jpg) no-repeat center center fixed;
+    background: url(images/lenatech2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -61,7 +61,7 @@ html {
 
 #mainDiv {
     position: absolute;
-    top: 37%;
+    top: 180px;
     left: 50px;
     color: #fff;
     z-index: 1001;
