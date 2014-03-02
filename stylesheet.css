@@ -65,6 +65,7 @@ html {
     left: 50px;
     color: #fff;
     z-index: 1001;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 #mainDiv h1 {
